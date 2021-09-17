@@ -8,10 +8,23 @@
         body {
             height: 100%;
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap; 
         }
         
         nav {
             position: fixed;
+            width: 100%;
+            opacity: 0;
+        }
+
+        nav ul {
+            visibility: hidden;
+        }
+
+        nav.show ul{
+            visibility: visible;
         }
         
         h1 {
@@ -34,7 +47,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="navi">
         <ul>
             <li>
                 <a href="#fpage">First page</a>
